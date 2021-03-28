@@ -1,0 +1,92 @@
+\hypertarget{class_employee}{}\doxysection{Employee Class Reference}
+\label{class_employee}\index{Employee@{Employee}}
+
+
+{\ttfamily \#include $<$Employee.\+h$>$}
+
+Inheritance diagram for Employee\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/d5c/class_employee}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_employee_a5cdabebeba1e0ff8f5180ff1cc4a162e}\label{class_employee_a5cdabebeba1e0ff8f5180ff1cc4a162e}} 
+const std\+::string \& {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{class_employee_acbfcf5e573836fb5093c1f93c17d51d7}\label{class_employee_acbfcf5e573836fb5093c1f93c17d51d7}} 
+void {\bfseries set\+Name} (const std\+::string \&new\+Name)
+\item 
+\mbox{\Hypertarget{class_employee_a6bad55099c73a45276822429e7f3aabc}\label{class_employee_a6bad55099c73a45276822429e7f3aabc}} 
+int {\bfseries get\+Hours\+Worked} () const
+\item 
+\mbox{\Hypertarget{class_employee_aa672c2bb9560605f23e8fefff4f579a2}\label{class_employee_aa672c2bb9560605f23e8fefff4f579a2}} 
+void {\bfseries set\+Hours\+Worked} (int hours)
+\item 
+\mbox{\hyperlink{class_employee_a8117181e20a68a051d94902c89c770b6}{Employee}} (std\+::string name)
+\item 
+void \mbox{\hyperlink{class_employee_a369c0d5355486c9768a3e3aeae07b4b0}{add\+Work\+Hours}} (int hours)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_employee_a70a8874c17c1e73c549fc27bb300ca64}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_employee}{Employee}} \&emp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the employee class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_employee_a8117181e20a68a051d94902c89c770b6}\label{class_employee_a8117181e20a68a051d94902c89c770b6}} 
+\index{Employee@{Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}}
+{\footnotesize\ttfamily Employee\+::\+Employee (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor that takes in the name of the employee 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ the full name of the employee \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_employee_a369c0d5355486c9768a3e3aeae07b4b0}\label{class_employee_a369c0d5355486c9768a3e3aeae07b4b0}} 
+\index{Employee@{Employee}!addWorkHours@{addWorkHours}}
+\index{addWorkHours@{addWorkHours}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{addWorkHours()}{addWorkHours()}}
+{\footnotesize\ttfamily void Employee\+::add\+Work\+Hours (\begin{DoxyParamCaption}\item[{int}]{hours }\end{DoxyParamCaption})}
+
+Adds to the total hours worked by the employee 
+\begin{DoxyParams}{Parameters}
+{\em hours} & -\/ additional hours, in integers \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_employee_a70a8874c17c1e73c549fc27bb300ca64}\label{class_employee_a70a8874c17c1e73c549fc27bb300ca64}} 
+\index{Employee@{Employee}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_employee}{Employee}} \&}]{emp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Overload of the $<$$<$ operator 
+\begin{DoxyParams}{Parameters}
+{\em out} & -\/ an ostream ref \\
+\hline
+{\em emp} & -\/ an employee \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Employee.\+h\item 
+Employee.\+cpp\end{DoxyCompactItemize}

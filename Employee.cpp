@@ -18,16 +18,16 @@ const std::string &Employee::getName() const {
     return name;
 }
 
-void Employee::setName(const std::string &name) {
-    Employee::name = name;
+void Employee::setName(const std::string &newName) {
+    Employee::name = newName;
 }
 
 int Employee::getHoursWorked() const {
     return hoursWorked;
 }
 
-void Employee::setHoursWorked(int hoursWorked) {
-    Employee::hoursWorked = hoursWorked;
+void Employee::setHoursWorked(int hours) {
+    Employee::hoursWorked = hours;
 }
 
 std::ostream &operator<<(std::ostream& out, const Employee& emp){

@@ -1,29 +1,23 @@
-//
-// Created by Keith Lancaster on 3/28/21.
-//
-
 #ifndef DOXYGEN_EMPLOYEE_H
 #define DOXYGEN_EMPLOYEE_H
 
-
 #include <string>
 
+/**
+ * This is the employee class.
+ */
 class Employee {
     std::string name;
-public:
-    const std::string &getName() const;
-
-    void setName(const std::string &name);
-
-    int getHoursWorked() const;
-
-    void setHoursWorked(int hoursWorked);
-
-private:
     int hoursWorked = 0;
 public:
+    const std::string &getName() const;
+    void setName(const std::string &newName);
+    int getHoursWorked() const;
+    void setHoursWorked(int hours);
+
     explicit Employee(std::string  name);
     void addWorkHours(int hours);
+
     friend std::ostream& operator<<(std::ostream& out, const Employee& emp);
 };
 

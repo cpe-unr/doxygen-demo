@@ -1,7 +1,3 @@
-//
-// Created by Keith Lancaster on 3/28/21.
-//
-
 #ifndef DOXYGEN_MANAGER_H
 #define DOXYGEN_MANAGER_H
 
@@ -14,9 +10,7 @@ private:
 
 public:
     explicit Manager(const std::string &name);
-
     void printEmployees();
-public:
     void addEmployee(Employee* newEmployee);
 };
 
